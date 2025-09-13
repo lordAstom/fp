@@ -49,6 +49,10 @@ def prog_python():
 def prog_sql():
     return render_template('prog_sql.html')
 
+@app.route('/programacion/java')
+def prog_java():
+    return render_template('prog_java.html')
+
 @app.route('/projects/personal')
 def pj_personal():
     return render_template('pj_personal.html')
