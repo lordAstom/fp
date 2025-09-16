@@ -61,19 +61,24 @@ li.mix {border-style: dotted dashed solid double;}
   width: 300px;
   position: relative;
 }
+.box-margin {
+  background: #ff9800;
+  margin: 40px;
+  padding: 30px;
+  position: relative;
+}
 .box-margin::before {
   content: "Margin";
   position: absolute;
   top: -30px;
   left: 50%;
   transform: translateX(-50%);
-  color: #888;
   font-size: 1rem;
 }
 .box-border {
-  background: #eee;
+  background: #199917;
   padding: 20px;
-  border: 8px solid #2196F3;
+  border: 30px solid #2196F3;
   position: relative;
 }
 .box-border::before {
@@ -82,21 +87,19 @@ li.mix {border-style: dotted dashed solid double;}
   top: -28px;
   left: 50%;
   transform: translateX(-50%);
-  color: #2196F3;
   font-size: 1rem;
 }
 .box-padding {
-  background: #fff;
+  background: #f43030;
   padding: 30px;
   position: relative;
 }
 .box-padding::before {
   content: "Padding";
   position: absolute;
-  top: -28px;
+  top: -25px;
   left: 50%;
   transform: translateX(-50%);
-  color: #666;
   font-size: 1rem;
 }
 .box-content {
@@ -107,9 +110,8 @@ li.mix {border-style: dotted dashed solid double;}
 .box-content::before {
   content: "Content";
   position: absolute;
-  top: -28px;
+  top: -15px;
   left: 50%;
   transform: translateX(-50%);
-  color: #333;
   font-size: 1rem;
 }
