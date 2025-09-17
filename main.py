@@ -56,6 +56,10 @@ def prog_java():
 @app.route('/programacion/c')
 def prog_c():
     return render_template('prog_c.html')
+
+@app.route('/programacion/bash')
+def prog_bash():
+    return render_template('prog_bash.html')
     
 @app.route('/projects/personal')
 def pj_personal():
@@ -76,6 +80,10 @@ def pj_games():
 @app.route('/projects/ordered')
 def pj_ordered():
     return render_template('pj_ordered.html')
+
+@app.route('/computer_science/linux')
+def cs_linux():
+    return render_template('cs_linux.html')
 
 @app.route("/stream")
 def stream():

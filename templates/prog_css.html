@@ -28,7 +28,10 @@
           <a class="nav-link gray_link" href="#padding">Padding</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link gray_link" href="#backgrounds"></a>
+          <a class="nav-link gray_link" href="#box_model">Box model</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link gray_link" href="#outline">Outline</a>
         </li>        
       </ul>
     </div>
@@ -55,12 +58,15 @@
           <li class="text-left main_content">/* This is a single-line comment */</li> 
           <li class="text-left main_content">Correct properties but invalid values will be ignored.</li>
           <li class="text-left main_content">Top and bottom margins of elements are sometimes collapsed into a single margin that is equal to the largest of the two margins.</li>
-          <li class="text-left main_content"></li>
-          <li class="text-left main_content"></li>
-          <li class="text-left main_content"></li>
-          <li class="text-left main_content"></li>
-          <li class="text-left main_content"></li>
-          <li class="text-left main_content"></li>
+          <li class="text-left main_content">If you use both the width property and the max-width property on the same element, and the value of the width property is larger than the max-width property; the max-width property value will be used!</li>
+          <li class="text-left main_content"><code>max-width</code> is useful to so that if screen is smaller than with it does not resert to scrolling</li>
+          <li class="text-left main_content">Box Model definitions</li>
+          <ul>   
+            <li class="text-left main_content">Content - The content of the box, where text and images appear</li>
+            <li class="text-left main_content">Padding - Clears an area around the content. The padding is transparent</li>
+            <li class="text-left main_content">Border - A border that goes around the padding and content</li>
+            <li class="text-left main_content">Margin - Clears an area outside the border. The margin is transparent</li>
+          </ul>
       </ul>
     </div>
     <div class="row justify-content-md-left container d-flex mx-auto">
@@ -191,30 +197,51 @@
         <li class="text-left main_content"><code>padding: 25px 50px 75px;</code> this sets the top padding to 25px, right and left to 50px, and bottom to 75px</li>
         <li class="text-left main_content"><code>padding: 25px 50px;</code> this sets the top and bottom paddings to 25px, and the right and left paddings to 50px</li>
         <li class="text-left main_content"><code>padding</code> sets all the paddings of an element (top, right, bottom, left)</li>
-        <li class="text-left main_content"></li>
-        <li class="text-left main_content"></li>
       </ul>
     </div>
     <div class="row justify-content-md-left container d-flex mx-auto">
-      <h2 class="h2_big text-left">box model</h2> 
+      <h2 class="h2_big text-left">Box model</h2> 
     </div>
     <div class="row justify-content-md-left container d-flex mx-auto">
       <ul>
-        <li class="text-left main_content"></li>
-        <li class="text-left main_content"></li>
-        <li class="text-left main_content"></li>
-        <li class="text-left main_content"></li>
-        <li class="text-left main_content"></li>
-        <li class="text-left main_content"></li>
+        <li class="text-left main_content"><code>box-sizing </code>defines how the width and height of an element are calculated: should they include padding and borders, or not.</li>
+        <ul>
+          <li class="text-left main_content"><code>box-sizing:content-box;</code>This is default. The width and height properties includes only the content (border and padding are not included)</li>
+          <li class="text-left main_content"><code>box-sizing:border-box;</code>The width and height properties includes content, padding and border</li>
+        </ul>
+        <li class="text-left main_content"><code>max-width</code>property is used to set the maximum width of an element.</li>
+        <li class="text-left main_content"><code>height</code>and <code>width</code>properties are used to set the height and width of an element. And have the following property values</li>
+        <ul>
+          <li class="text-left main_content"><code>auto</code>Default. browsert calculates the height and width</li>
+          <li class="text-left main_content">defined in px, cm, em ..</li>
+          <li class="text-left main_content"><code>%</code>defines width or height in percent of the containing block</li>
+          <li class="text-left main_content"><code>initial</code> sets the height or width to its default value</li>
+          <li class="text-left main_content"><code>inherit</code>inherits values from parent value</li>
+        </ul>
+        <li class="text-left main_content"><code>min-width</code>property used to set the minimum width of an element.</li>
+        <li class="text-left main_content"><code>max-height</code>property used to set the maximum height of an element.</li>
+        <li class="text-left main_content"><code>min-height</code>property uded to set the minumum height of an element.</li>
       </ul>
     </div>
-<div id="box-example" class="box-margin">
-  <div class="box-border">
-    <div class="box-padding">
-      <p class="box-content"></p>
+    <div id="box-example" class="box-margin">
+      <div class="box-border">
+        <div class="box-padding">
+          <p class="box-content"></p>
+        </div>
+      </div>
     </div>
-  </div>
-</div>>
+    <div class="row justify-content-md-left container d-flex mx-auto">
+      <h2 class="h2_big text-left" id="outline">outline</h2> 
+    </div>
+    <div class="row justify-content-md-left container d-flex mx-auto">
+      <ul>
+        <li class="text-left main_content"><code>outline-style</code>defines the type of outline. same options as <code>border-style</code></li>
+        <li class="text-left main_content"><code>outline-color</code>sets the color of the ouline</li>
+        <li class="text-left main_content"><code>outline-right</code>sets the right outline of an element</li>
+        <li class="text-left main_content"><code>outline-bottom</code>sets the bottom outline of an element</li>
+        <li class="text-left main_content"><code>outline-left</code>sets the left outline of an element</li>
+      </ul>
+    </div>
     <div class="row justify-content-md-left container d-flex mx-auto">
       <h2 class="h2_big text-left">Links</h2> 
     </div>
