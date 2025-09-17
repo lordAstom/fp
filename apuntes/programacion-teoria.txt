@@ -1,0 +1,13 @@
+nivel fisico logica digital
+    circuitos combinacionales (logica)
+    circuitos secuenciales (memeoria)
+nivel microarquitectura (cpu, memoria, BUS, perifericos)
+    CPU(Central Processsing Unit)
+    -ALU Arithmetic logical unit (op aritmeticas y logicas) tiene registro (memoria ultra-rapida cache)
+    -Unidad de control: (ejecuta instrucciones) (memoria ultra-rapida cache) Receives orders in assemly code
+ 
+
+Arquitectura von neumann: Dato +instrucciones se alamacenan en memoria. memoria y debe ser inf rapida e inf capacidad
+
+Jerarquia memoria
+
