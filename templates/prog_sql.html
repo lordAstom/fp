@@ -4,16 +4,16 @@
     <h1 class="text-left h1_big">SQL</h1>
 </div>
 <div class="row justify-content-left container d-flex mx-auto">
-    <p class="text-left main_content">
-    To note down stuff i don't remember when looking <a href="https://www.w3schools.com/sql" target="_blank" class="golden_link" >at w3 schools</a> and to act as a cheatsheet
-    </p>
+  <p class="text-left main_content">To note down stuff from school and wrschools and to act as a cheatsheet</p>
 </div>
 <div class="row justify-content-md-left container d-flex mx-auto">
-    <h2 class="h2_big text-left" id="theory">Theory</h2>
+  <h2 class="h2_big text-left" id="theory">Theory</h2>
 </div>
 <div class="row justify-content-md-left container d-flex mx-auto">
-    <ul>
-    <li class="text-left main_content">Doing source database schema if one with the same name exists replaces the database with the schema </li>
+  <ul>
+    <li class="text-left main_content">Doing source database schema if one with the same name exists replaces the database with the schema if the schema has drop in it to do it</li>
+    <li class="text-left main_content">Acces mysql with password <code>mysql -u admin -p</code> as admin</li>
+    <li class="text-left main_content">The order of items in <code>select column2, column1 from database;</code> matters as will display the columns in that orders</li>
     <li class="text-left main_content"></li>
     <li class="text-left main_content"></li>
     <li class="text-left main_content"></li>
@@ -22,27 +22,31 @@
     <li class="text-left main_content"></li>
     <li class="text-left main_content"></li>
     <li class="text-left main_content"></li>
-    <li class="text-left main_content"></li>
-    <li class="text-left main_content"></li>
-    </ul>
+  </ul>
 </div>
 <div class="row justify-content-md-left container d-flex mx-auto">
     <h2 class="h2_big text-left" id="theory">Statements and keywords</h2>
 </div>
 <div class="row justify-content-md-left container d-flex mx-auto">
-    <ul>
+  <ul>
     <li class="text-left main_content"><code>source</code>used to load a database schema or data or both</li>
+    <li class="text-left main_content"><code>select count(*) from table;</code>Counts number of rows from table</li>
+    <li class="text-left main_content"><code>select count(*) from table limit 1;</code>limits entries shown from table to number</li>
+    <li class="text-left main_content"><code>explain table;</code>shows info of the table</li>
+    <li class="text-left main_content"><code>show tables;</code>in mysql shows tables</li>
+    <li class="text-left main_content"><code>show databases;</code>In my sql shows the available databases to use.</li>
+    <li class="text-left main_content"><code>use database;</code>in mysql loads a database to use for querying</li>
+    <li class="text-left main_content"><code>select count(*) from productos</code>dispalys the amount of rows in databse</li>
+    <li class="text-left main_content"><code>select * from clientes where year(fecha_registro)=2024;</code>year given a date extracts the year. month and day also works for the same thing</li>
+    <li class="text-left main_content"><code>select * from database where value="string"</code></li>
+    <li class="text-left main_content"><code></code></li>
     <li class="text-left main_content"></li>
     <li class="text-left main_content"></li>
     <li class="text-left main_content"></li>
     <li class="text-left main_content"></li>
     <li class="text-left main_content"></li>
     <li class="text-left main_content"></li>
-    <li class="text-left main_content"></li>
-    <li class="text-left main_content"></li>
-    <li class="text-left main_content"></li>
-    <li class="text-left main_content"></li>
-    </ul>
+  </ul>
 </div>
 </body>
 </html>
