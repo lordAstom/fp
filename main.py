@@ -60,6 +60,10 @@ def prog_c():
 @app.route('/programacion/bash')
 def prog_bash():
     return render_template('prog_bash.html')
+
+@app.route('/programacion/git')
+def prog_git():
+    return render_template('prog_git.html')
     
 @app.route('/projects/personal')
 def pj_personal():

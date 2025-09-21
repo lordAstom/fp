@@ -106,3 +106,13 @@ li.mix {border-style: dotted dashed solid double;}
   left: 50%;
   transform: translateX(-50%);
   font-size: 1rem;}
+code #html_figure{
+  background-color: black;
+  color:white;
+  padding: 5px;
+  margin: 3px;
+  border: solid white 2px;
+  }
+  li{
+    margin: 3.5px;
+  }
