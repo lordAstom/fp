@@ -2,14 +2,14 @@ nivel fisico logica digital
     circuitos combinacionales (logica)
     circuitos secuenciales (memeoria)
 nivel microarquitectura (cpu, memoria, BUS, perifericos). Unidades funcionales:
-    -CPU(Central Processsing Unit)
-    -ALU Arithmetic logical unit (op aritmeticas y logicas) tiene registro (memoria ultra-rapida funciona como cache pero mas rapido)
-    -Unidad de control: (ejecuta instrucciones) (memoria ultra-rapida funciona como cache pero mas rapido) Receives orders in assemly code
+  -CPU(Central Processsing Unit)
+  -ALU Arithmetic logical unit (op aritmeticas y logicas) tiene registro (memoria ultra-rapida funciona como cache pero mas rapido)
+  -Unidad de control: (ejecuta instrucciones) (memoria ultra-rapida funciona como cache pero mas rapido) Receives orders in assemly code
 nivel 3 perifericos
 nivel 4 BUS's
-    Datos:Dato a ecscribir o leer
-    Control:Operacion a escribir (2 cables)
-    Dirección:Donde se va a leer o escribir
+  Datos:Dato a ecscribir o leer
+  Control:Operacion a escribir (2 cables)
+  Dirección:Donde se va a leer o escribir
  
 
 Arquitectura von neumann: Dato + instrucciones se alamacenan en memoria. memoria y debe ser inf rapida, inf capacidad y memoria persistente
