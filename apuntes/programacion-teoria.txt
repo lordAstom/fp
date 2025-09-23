@@ -24,7 +24,12 @@ IP registro(almacena la instruccion)
 
 Assembly 
 ORG 200H -save program at 200H
-MOV AX,20H sava 20 i hex at AX
+MOV AX,20H saves 20 in hex at AX
 MOV DX,30H
 ADD AX,DX -add AX and DX and write at AX(first position)
 END
+
+tipos de datos primitivos (int, char, float bool) (entero, caracter, decimal, bool)
+
+'a' char
+"a" string
