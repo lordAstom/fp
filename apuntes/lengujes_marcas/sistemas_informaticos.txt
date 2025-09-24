@@ -7,9 +7,26 @@ formatos binarios
     primer bit a la izquierda representa el signo + es 0 y - es 1
     resto bits son magnitud
   complemento a 1
-    se mantiene el signo y en la magnitud cambian 0 los por 1 y los 1 por c0
+    se mantiene el signo y en la magnitud cambian 0 los por 1 y los 1 por 0
   complemento a 2
     se obtiene sumando 1 a la magnitud de complemento a 1
+
+Estructura Ordenador
+CPU  (Central processing unit) -Se realizan los calculos necesarios
+Unidades de control:
+  Registro Contador de Programa (CP): Contiene instruccion donde se encuentra la siguiente instruccion
+  Registro de Instrucción: contiene la instruccion que se esta ejecutando, que puede tener varaias partes
+  Decodificador: decodifica la instruccion (direccion de momoria w-r para leer)
+  Secuenciador: Secuencia las ordenes decodificadas por el sequenciador
+  Reloj: Envia pulsos constanetes mediante el efecto piezoelectrico
+  ALU: arithmetic logical unit hace operaciones aritmeticas y ogicas
+
+RAM: Random access memory 
+  Tarda lo mismo en acceder y leer cualquier elemento
+  tipos: SRAM y DRAM
+
+Registro de dirección de memoria (RDM): Contiene la direcion de la celda donde escribir/leer
+Registro Intercambio de memoria (RIM): Guarda los datos leidos y a escribir
 
 
 to study:
