@@ -106,7 +106,7 @@ li.mix {border-style: dotted dashed solid double;}
   left: 50%;
   transform: translateX(-50%);
   font-size: 1rem;}
-code #html_figure{
+code{
   background-color: black;
   color:white;
   padding: 5px;

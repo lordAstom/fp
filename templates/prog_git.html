@@ -56,7 +56,7 @@
         <li class="text-left main_content">Each time you run git stash, your changes are saved on top of a "stack". The most recent stash is on top, and you can apply or drop stashes from the top down, or pick a specific one from the list.</li>
         <li class="text-left main_content">A merge conflict happens when changes in two branches touch the same part of a file and Git doesn't know which version to keep. both willbe kept and shown with extra text to let you decide what to do</li>
         <li class="text-left main_content">Exclude files that shouldn't be tracked (like build artifacts, log files, or secrets) by adding them to a .gitignore file.</li>
-        <li class="text-left main_content"></li>
+        <li class="text-left main_content">The .gitignore file is used to specify which files git should not keep track of</li>
         <li class="text-left main_content"></li>
         <li class="text-left main_content"></li>
         <li class="text-left main_content"></li>
@@ -111,7 +111,7 @@
         <li class="text-left main_content"><code>git show branch_name</code> shows the branch details</li>
         <li class="text-left main_content"><code>git show tagname</code> shows the tag details</li>
         <li class="text-left main_content"><code>git show HEAD</code> shows the last commit details</li>
-        <li class="text-left main_content"><code>git show HEAD~1</code> shows the commit before the last commit details</li
+        <li class="text-left main_content"><code>git show HEAD~1</code> shows the commit before the last commit details</li>
         <h2 class="h2_big" id="git_branch">Git branches</h2>
         <li class="text-left main_content"><code>git branch</code> lists all branches</li>
         <li class="text-left main_content"><code>git branch branch_name</code> creates a new branch</li>
@@ -126,6 +126,7 @@
         <li class="text-left main_content"><code>git push -u origin branch_name</code> pushes the branch to the remote repo</li>
         <li class="text-left main_content"><code>git push</code> pushes the changes to the remote repo</li>
         <li class="text-left main_content"><code>git pull</code> pulls the changes from the remote repo</li>
+        <li class="text-left main_content"><code>git fetch origin</code> fetches the changes from the remote repo, does not modify working files but let's you see changes made before merging</li>
         <li class="text-left main_content"><code>git clone url</code> clones a remote repo</li>
         <h2 class="h2_big" id="git_rm">Git remove</h2>
         <li class="text-left main_content"><code>git rm file_name</code> removes a file from the repo</li>
@@ -146,8 +147,9 @@
         <h2 class="h2_big" id="git_reset">Git reset and restore</h2>
         <li class="text-left main_content"><code>git reset --hard commit_id</code> resets the repo to the commit id</li>
         <li class="text-left main_content"><code>git reset --soft commit_id</code> resets the repo to the commit id but keeps the changes staged</li>
-        <li class="text-left main_content"><code>git revert commit_id</code> reverts the commit id</li>
-        <li class="text-left main_content"><code>git fetch</code> fetches the changes from the remote repo</li>
+        <li class="text-left main_content"><code>git revert commit_id</code> reverts the commit id by creating a new commit without the changes. preserves commit history</li>
+        <li class="text-left main_content"><code>git revert HEAD --no-edit</code> fetches the changes from the remote repo</li>
+        <li class="text-left main_content"><code>git reset --hard origin/branch_name</code> resets the local branch to the remote branch</li>
         <li class="text-left main_content"><code>git restore file_name</code> restores the file to the last commit version</li>
         <li class="text-left main_content"><code>git restore --staged file_name</code> removes the file from the staging area but keeps the changes made</li>
         <h2 class="h2_big" id="git_tag">Git tag</h2>
@@ -159,10 +161,16 @@
         <li class="text-left main_content"><code>git tag -f name_of_tag new_commit_hash</code> moves the tag named to the new commit must be forced pushed after</li>
         <li class="text-left main_content"><code>push --force origin name_of_tag</code> forcefilly pushes the tag to remove the other</li>
         <li class="text-left main_content"><code>git tag -d tag_name</code> deletes the tag</li>
-        <li class="text-left main_content"></li>
-        <li class="text-left main_content"></li>
-        <li class="text-left main_content"></li>
-        <li class="text-left main_content"></li>
+        <li class="text-left main_content"><code>git push origin --tags</code> pushes all tags to the remote repo</li>
+        <li class="text-left main_content"><code>git push origin tag_name</code> pushes the tag to the remote repo</li>
+        <h2 class="h2_big" id="rebase">Rebase</h2>
+        <li class="text-left main_content"><code>git rebase branch_name</code> rebases the current branch onto branch_name</li>
+        <li class="text-left main_content"><code>git rebase --abort</code> aborts the rebase</li>
+        <li class="text-left main_content"><code>git rebase --continue</code> continues the rebase after resolving conflicts</li>
+        <li class="text-left main_content"><code>git rebase --skip</code> skips the current commit during rebase</li>
+        <li class="text-left main_content"><code>git pull --rebase</code> pulls the changes from the remote repo and rebases</li>
+        <h2 class="h2_big" id="outline">Outline</h2>
+
         <li class="text-left main_content"></li>
         <li class="text-left main_content"></li>
         <li class="text-left main_content"></li>
